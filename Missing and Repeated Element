@@ -1,0 +1,23 @@
+var sorting = function(arr) {
+    arr.sort()
+    k=[]
+    let missing=null;
+    let repeat=null;
+   for(let i=1;i<arr.length+1;i++){
+         //console.log(arr[i])
+    
+       if(!arr.includes(i)){
+           missing=i
+       }
+       if(!k.includes(arr[i-1])){
+           k.push(arr[i-1])
+       }
+       else{
+           repeat=arr[i-1]
+       }
+   }
+   
+   return `Missing element is ${missing} and repeated element is ${repeat}`
+};
+
+console.log(sorting([3,2,3]))
