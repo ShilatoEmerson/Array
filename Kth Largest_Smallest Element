@@ -1,0 +1,22 @@
+//Largest K
+
+const arr=[2,5,7,9,4]
+k=2;
+const largestK=(arr,k)=>{
+    arr.sort()
+    return arr[arr.length-k]
+    
+}
+console.log(largestK(arr,k));
+
+
+//Smallest K
+
+const arr=[2,5,7,9,4]
+k=2;
+const smallestK=(arr,k)=>{
+    arr.sort()
+    return arr[k]
+    
+}
+console.log(smallestK(arr,k));
