@@ -1,0 +1,13 @@
+const arr=["s","t","r","i","n","g","s"]
+
+const reversed=(str)=>{
+    //method1:
+    //return str.reverse().join("")
+    //method2:
+    let out=""
+    for(let i=str.length-1;i>=0;i--){
+        out=out+str[i]
+    }
+    return out
+}
+console.log(reversed(arr));
